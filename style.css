@@ -79,6 +79,7 @@
     width: 38%;
     font-size: 35px;
     margin-left: 80px;
+    font-weight: 900;
 }
 
 .page1h1 span{
@@ -103,21 +104,36 @@
 
 .boxinput input{
     /* min-width: 5%; */
-    max-width: 70%;
+    /* min-width: 70%; */
+    width: 76%;
     border: none;
     outline: none;
 }
 
-.boxinput button{
-    margin-left: 155px;
+.boxinpbtn{
+    margin-top: -25px;
+    border: 2px solid rgb(38, 38, 252);
+    padding: 4px;
+    background-color: rgb(38, 38, 252);
+    color: white;
+    font-size: 12px;
+    width: 95px;
+    height: 27px;
+    margin-left: 310px;
+    cursor: pointer;
+}
+
+/* .boxinput button{
+    margin-left: 300px;
+    margin-top: -30px;
     border: 2px solid rgb(38, 38, 252);
     padding: 2px;
     background-color: rgb(38, 38, 252);
     color: white;
     font-size: 12px;
     width: 95px;
-    height: 27px;
-}
+    height: 97px;
+} */
 
 ::placeholder{
     padding-left: 10px;
@@ -388,25 +404,25 @@
 
 
 .boxcont p{
-    margin-left: -25px;
+    margin-left: -36px;
     margin-top: -7%;
     width: 160px;
 }
 
 .box2cont p{
-    margin-left: 78%;
+    margin-left: 70%;
 }
 
 .box3cont p{
-    margin-left: 170%;
+    margin-left: 162%;
 }
 
 .box4cont p{
-    margin-left: 265%;
+    margin-left: 255%;
 }
 
 .box5cont p{
-    margin-left: 359%;
+    margin-left: 349%;
 }
 
 .thirdpage{
@@ -427,12 +443,13 @@
 .thirdpgboxes{
     display: flex;
     gap: 15px;
-    margin-left: 18%;
+    margin-left: 2%;
     margin-top: 5%;
 }
 
 .thirdpgbox{
     min-height: 150px;
+    box-shadow: 0px 0px 0px 3px rgb(236, 233, 233);
     min-width: 25%;
     border-radius: 5px;
     background-color: rgba(223, 240, 245, 0.906);
@@ -518,7 +535,7 @@
 }
 
 .fourthpgcards{
-    margin-left: 60px;
+    margin-left: 200px;
 }
 
 .cardh5{
@@ -647,25 +664,25 @@
 .sixsecside .icon1{
     position: absolute;
     left: 63%;
-    top:522% ;
+    top:553% ;
 }
 
 .sixsecside .icon2{
     position: absolute;
     left: 79.5%;
-    top:522% ;
+    top:553% ;
 }
 
 .sixsecside .icon3{
     position: absolute;
     left: 94.5%;
-    top:522% ;
+    top:553% ;
 }
 
 .sixsecside .new{
     position: absolute;
     left:51.5% ;
-    top: 487.5%;
+    top: 518.5%;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -677,7 +694,7 @@
 .sixsecside .new2{
     position: absolute;
     left: 68%;
-    top: 487.5%;
+    top: 518.5%;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -688,7 +705,7 @@
 .sixsecside .new3{
     position: absolute;
     left: 84.5%;
-    top: 487.5%;
+    top: 518.5%;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -699,7 +716,7 @@
 .sixsecside .oct{
     position: absolute;
     left: 51.5%;
-    top: 518%;
+    top: 549%;
     font-size: 12px;
     border: 2px solid black;
     border-radius: 5px;
@@ -711,7 +728,7 @@
 .sixsecside .oct2{
     position: absolute;
     left: 68%;
-    top: 518%;
+    top: 549%;
     font-size: 12px;
     border: 2px solid black;
     border-radius: 5px;
@@ -723,7 +740,7 @@
 .sixsecside .oct3{
     position: absolute;
     left: 84.5%;
-    top: 518%;
+    top: 549%;
     font-size: 12px;
     border: 2px solid black;
     border-radius: 5px;
@@ -740,12 +757,14 @@
 
 .sixsecside .sixsecicon1{
     position: absolute;
-    left: 49%;
-    top: 495%;
+    left: 50%;
+    top: 535%;
 }
 
 .sixsecside .sixsecicon2{
-    left: 99%;
+    position: absolute;
+    left: 98%;
+    top: 535%;
 }
 
 .seventhsec{
@@ -882,8 +901,8 @@
 }
 
 .ninthsec-card1 img{
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 5rem;
+    width: 6rem;
     border-radius: 20px;
     padding: 15px;
 }
@@ -1306,9 +1325,15 @@
 
 }
 
-@media (max-width:1410px){
-    .boxinput button{
-        visibility: hidden;
+@media (max-width:1103px){
+    .boxinpbtn{
+        margin-left: 255px;
+    }
+}
+
+@media (max-width:980px){
+    .boxinpbtn{
+        margin-left: 220px;
     }
 }
 
@@ -1330,6 +1355,14 @@
 
     .lastline{
         margin-left: -6%;
+    }
+
+    .boxinput input{
+        width: 10%;
+    }
+
+    .boxinpbtn{
+        margin-left: 160px;
     }
 }
 
@@ -1484,7 +1517,7 @@
 
 @media (max-width:1421px){
      .sixthsec button{
-        visibility: hidden;
+        /* visibility: hidden; */
      }
 }
 
@@ -1570,6 +1603,14 @@
 
     .sixsecside .new , .new2 , .new3 , .oct , .oct2 , .oct3 , .icon1 , .icon2 , .icon3 , .sixsecicon1 , .sixsecicon2{
         visibility: hidden;
+    }
+
+}
+
+@media (max-width:1400px){
+
+    .sixsecside .new , .new2 , .new3 , .oct , .oct2 , .oct3 , .icon1 , .icon2 , .icon3 , .sixsecicon1 , .sixsecicon2{
+        visibility: visible;
     }
 
 }
